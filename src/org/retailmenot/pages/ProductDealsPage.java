@@ -40,7 +40,7 @@ public class ProductDealsPage {
 	   try{
 	   System.out.println("Xpath is" + Utility.prop.getProperty("categoryItem_XpathPart1")+categoryName+Utility.prop.getProperty("categoryItem_XpathPart2"));
 	   
-	   WebElement e = Utility.findElementsByLocator("xpath","xpath value",driver);
+	   //WebElement e = Utility.findElementsByLocator("xpath","xpath value",driver);
 	   List<WebElement> descList = driver.findElements(By.xpath(Utility.prop.getProperty("categoryItem_XpathPart1")+categoryName+Utility.prop.getProperty("categoryItem_XpathPart2")));
 	   //List<WebElement> descList = driver.findElements(By.xpath(".//*[@id='"+categoryName+"']//div/h6"));
 	   int count=0;
